@@ -7,7 +7,7 @@ class GrOsmosdr < Formula
   depends_on "cmake" => :build
   depends_on "gnuradio"
   depends_on "gr-iqbal"
-  depends_on "rtl-sdr"
+  depends_on "librtlsdr"
 
   def install
     mkdir "build" do
