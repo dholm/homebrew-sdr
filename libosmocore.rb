@@ -1,6 +1,6 @@
 require "formula"
 
-class GrOsmocore < Formula
+class Libosmocore < Formula
   homepage "http://bb.osmocom.org/trac/wiki/libosmocore"
   head "git://git.osmocom.org/libosmocore"
 
@@ -9,7 +9,6 @@ class GrOsmocore < Formula
   depends_on "autoconf" => :build
   depends_on "pkg-config" => :build
   depends_on "pcsc-lite"
-  depends_on "gnuradio"
 
   patch :DATA
 
