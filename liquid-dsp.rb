@@ -14,9 +14,7 @@ class LiquidDsp < Formula
     depends_on "pkg-config" => :build
   end
   stable do
-    depends_on "aclocal" => :build
     depends_on "autoconf" => :build
-    depends_on "autoheader" => :build
   end
 
   def install
