@@ -16,6 +16,7 @@ class LiquidDsp < Formula
 
   def install
     system "./bootstrap.sh" if build.head?
+    system "./reconf" if build.stable?
     system "./configure", "--prefix=#{prefix}"
     system "make"
     system "make install"
