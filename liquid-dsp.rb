@@ -13,9 +13,15 @@ class LiquidDsp < Formula
     depends_on "autoconf" => :build
     depends_on "pkg-config" => :build
   end
+  stable do
+    depends_on "autoconf" => :build
+    depends_on "gcc" => :build
+  end
 
   def install
+    ENV['CC'] = "#{Formula["gcc"].bin}/gcc-5" if build.stable?
     system "./bootstrap.sh" if build.head?
+    system "./reconf" if build.stable?
     system "./configure", "--prefix=#{prefix}"
     system "make"
     system "make install"
