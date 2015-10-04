@@ -13,9 +13,12 @@ class GrAirModes < Formula
 
   def install
     mkdir "build" do
+      ENV.append "LDFLAGS", "-Wl,-undefined,dynamic_lookup"
+      # Point Python library to existing path or CMake test will fail.
       args = %W[
         -DCMAKE_PREFIX_PATH=#{prefix}
-        -DPYTHON_LIBRARY='#{%x(python-config --prefix).chomp}/lib/libpython2.7.dylib'
+        -DCMAKE_SHARED_LINKER_FLAGS='-Wl,-undefined,dynamic_lookup'
+        -DPYTHON_LIBRARY='#{HOMEBREW_PREFIX}/lib/libgnuradio-runtime.dylib'
       ] + std_cmake_args
 
       system "cmake", "..", *args

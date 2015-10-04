@@ -13,7 +13,7 @@ class GrHam < Formula
   def install
     mkdir "build" do
       args = %W[
-        -DPYTHON_LIBRARY='#{%x(python-config --prefix).chomp}/lib/libpython2.7.dylib'
+        -DCMAKE_SHARED_LINKER_FLAGS='-Wl,-undefined,dynamic_lookup'
       ] + std_cmake_args
 
       system "cmake", "..", *args
