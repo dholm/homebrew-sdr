@@ -4,6 +4,7 @@ class GrOsmosdr < Formula
 
   depends_on "cmake" => :build
   depends_on "gnuradio"
+  depends_on "gr-fosphor"
   depends_on "gr-iqbal"
   depends_on "librtlsdr"
   depends_on "soapysdr"
