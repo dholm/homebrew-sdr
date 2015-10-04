@@ -1,5 +1,3 @@
-require "formula"
-
 class Pothos < Formula
   homepage "http://www.pothosware.com/"
   head "https://github.com/pothosware/pothos.git"
@@ -22,7 +20,7 @@ class Pothos < Formula
       ] + std_cmake_args
 
       system "cmake", "..", *args
-      system "make install"
+      system "make", "install"
     end
   end
 end

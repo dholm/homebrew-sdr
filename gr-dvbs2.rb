@@ -1,5 +1,3 @@
-require "formula"
-
 class GrDvbs2 < Formula
   homepage "https://github.com/drmpeg/gr-dvbs2"
   head "https://github.com/drmpeg/gr-dvbs2.git"
@@ -19,7 +17,7 @@ class GrDvbs2 < Formula
       ] + std_cmake_args
 
       system "cmake", "..", *args
-      system "make install"
+      system "make", "install"
     end
   end
 end

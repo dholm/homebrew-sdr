@@ -1,5 +1,3 @@
-require "formula"
-
 class GrRds < Formula
   homepage "https://github.com/balint256/gr-rds"
   head "https://github.com/bastibl/gr-rds.git"
@@ -18,7 +16,7 @@ class GrRds < Formula
       ] + std_cmake_args
 
       system "cmake", "..", *args
-      system "make install"
+      system "make", "install"
     end
   end
 end

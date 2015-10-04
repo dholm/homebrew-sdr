@@ -1,5 +1,3 @@
-require "formula"
-
 class GrMac < Formula
   homepage "https://github.com/balint256/gr-mac"
   head "https://github.com/balint256/gr-mac.git"
@@ -17,7 +15,7 @@ class GrMac < Formula
       ] + std_cmake_args
 
       system "cmake", "..", *args
-      system "make install"
+      system "make", "install"
     end
   end
 end

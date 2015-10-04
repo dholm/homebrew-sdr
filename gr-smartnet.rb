@@ -1,5 +1,3 @@
-require "formula"
-
 class GrSmartnet < Formula
   homepage "https://www.cgran.org/wiki/Smartnet"
   head "https://github.com/robotastic/gr-smartnet.git"
@@ -21,7 +19,7 @@ class GrSmartnet < Formula
       ] + std_cmake_args
 
       system "cmake", "..", *args
-      system "make install"
+      system "make", "install"
     end
   end
 end

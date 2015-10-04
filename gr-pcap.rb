@@ -1,5 +1,3 @@
-require "formula"
-
 class GrPcap < Formula
   homepage "https://github.com/osh/gr-pcap"
   head "https://github.com/osh/gr-pcap.git"
@@ -19,7 +17,7 @@ class GrPcap < Formula
       ] + std_cmake_args
 
       system "cmake", "..", *args
-      system "make install"
+      system "make", "install"
     end
   end
 end

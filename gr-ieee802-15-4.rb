@@ -1,5 +1,3 @@
-require "formula"
-
 class GrIeee802154 < Formula
   homepage "https://github.com/bastibl/gr-ieee802-15-4"
   head "https://github.com/bastibl/gr-ieee802-15-4.git"
@@ -20,7 +18,7 @@ class GrIeee802154 < Formula
       ] + std_cmake_args
 
       system "cmake", "..", *args
-      system "make install"
+      system "make", "install"
     end
   end
 end

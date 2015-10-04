@@ -1,5 +1,3 @@
-require "formula"
-
 class GrOsmosdr < Formula
   homepage "http://sdr.osmocom.org/trac/wiki/GrOsmoSDR"
   head "git://git.osmocom.org/gr-osmosdr"
@@ -19,7 +17,7 @@ class GrOsmosdr < Formula
       ] + std_cmake_args
 
       system "cmake", "..", *args
-      system "make install"
+      system "make", "install"
     end
   end
 end

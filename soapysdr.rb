@@ -1,5 +1,3 @@
-require "formula"
-
 class Soapysdr < Formula
   homepage "https://github.com/pothosware/SoapySDR/wiki"
   head "https://github.com/pothosware/SoapySDR.git"
@@ -17,7 +15,7 @@ class Soapysdr < Formula
       ] + std_cmake_args
 
       system "cmake", "..", *args
-      system "make install"
+      system "make", "install"
     end
   end
 end

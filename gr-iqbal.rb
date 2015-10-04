@@ -1,5 +1,3 @@
-require "formula"
-
 class GrIqbal < Formula
   homepage "http://www.osmocom.org/"
   head "git://git.osmocom.org/gr-iqbal"
@@ -21,7 +19,7 @@ class GrIqbal < Formula
       ] + std_cmake_args
 
       system "cmake", "..", *args
-      system "make install"
+      system "make", "install"
     end
   end
 end

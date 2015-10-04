@@ -1,5 +1,3 @@
-require "formula"
-
 class GrAis < Formula
   homepage "https://github.com/bistromath/gr-ais"
   head "https://github.com/bistromath/gr-ais.git"
@@ -22,7 +20,7 @@ class GrAis < Formula
       ] + std_cmake_args
 
       system "cmake", "..", *args
-      system "make install"
+      system "make", "install"
     end
   end
 end

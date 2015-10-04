@@ -1,5 +1,3 @@
-require "formula"
-
 class GrBaz < Formula
   homepage "http://wiki.spench.net/wiki/Gr-baz"
   head "https://github.com/balint256/gr-baz.git"
@@ -19,7 +17,7 @@ class GrBaz < Formula
       ] + std_cmake_args
 
       system "cmake", "..", *args
-      system "make install"
+      system "make", "install"
     end
   end
 end

@@ -24,7 +24,7 @@ class GrTheano < Formula
       resource("theano").stage { system "python", "setup.py", *python_args }
 
       system "cmake", "..", *std_cmake_args
-      system "make install"
+      system "make", "install"
     end
   end
 end

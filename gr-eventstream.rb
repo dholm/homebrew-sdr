@@ -1,5 +1,3 @@
-require "formula"
-
 class GrEventstream < Formula
   homepage "https://github.com/osh/gr-eventstream"
   head "https://github.com/osh/gr-eventstream.git"
@@ -21,7 +19,7 @@ class GrEventstream < Formula
       ] + std_cmake_args
 
       system "cmake", "..", *args
-      system "make install"
+      system "make", "install"
     end
   end
 end

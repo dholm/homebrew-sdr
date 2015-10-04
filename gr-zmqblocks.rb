@@ -1,5 +1,3 @@
-require "formula"
-
 class GrZmqblocks < Formula
   homepage "https://github.com/iohannez/gr-zmqblocks"
   head "https://github.com/iohannez/gr-zmqblocks.git"
@@ -24,7 +22,7 @@ class GrZmqblocks < Formula
       ] + std_cmake_args
 
       system "cmake", "..", *args
-      system "make install"
+      system "make", "install"
     end
   end
 end

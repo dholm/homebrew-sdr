@@ -1,5 +1,3 @@
-require "formula"
-
 class PreCog < Formula
   homepage "https://github.com/jmalsbury/pre-cog"
   head "https://github.com/jmalsbury/pre-cog.git"
@@ -18,7 +16,7 @@ class PreCog < Formula
       ] + std_cmake_args
 
       system "cmake", "..", *args
-      system "make install"
+      system "make", "install"
     end
   end
 end

@@ -10,7 +10,7 @@ class MultimonNg < Formula
   def install
     mkdir "build" do
       system "qmake",  "../multimon-ng.pro", "PREFIX=#{prefix}"
-      system "make install"
+      system "make", "install"
     end
   end
 end

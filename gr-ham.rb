@@ -1,5 +1,3 @@
-require "formula"
-
 class GrHam < Formula
   homepage "https://github.com/argilo/gr-ham"
   head "https://github.com/argilo/gr-ham.git"
@@ -17,7 +15,7 @@ class GrHam < Formula
       ] + std_cmake_args
 
       system "cmake", "..", *args
-      system "make install"
+      system "make", "install"
     end
   end
 end

@@ -1,5 +1,3 @@
-require "formula"
-
 class GrFchdetection < Formula
   homepage "https://github.com/hzhua/gr-fchdetection"
   head "https://github.com/hzhua/gr-fchdetection.git"
@@ -21,7 +19,7 @@ class GrFchdetection < Formula
       ] + std_cmake_args
 
       system "cmake", "..", *args
-      system "make install"
+      system "make", "install"
     end
   end
 end

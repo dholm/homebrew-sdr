@@ -1,5 +1,3 @@
-require "formula"
-
 class GrMediatools < Formula
   homepage "https://github.com/osh/gr-mediatools"
   head "https://github.com/osh/gr-mediatools.git"
@@ -22,7 +20,7 @@ class GrMediatools < Formula
       ] + std_cmake_args
 
       system "cmake", "..", *args
-      system "make install"
+      system "make", "install"
     end
   end
 end

@@ -24,6 +24,6 @@ class LiquidDsp < Formula
     system "./reconf" if build.stable?
     system "./configure", "--prefix=#{prefix}"
     system "make"
-    system "make install"
+    system "make", "install"
   end
 end

@@ -1,5 +1,3 @@
-require "formula"
-
 class GrSpecest < Formula
   homepage "https://github.com/kit-cel/gr-specest"
   head "https://github.com/kit-cel/gr-specest.git"
@@ -26,7 +24,7 @@ class GrSpecest < Formula
       ] + std_cmake_args
 
       system "cmake", "..", *args
-      system "make install"
+      system "make", "install"
     end
   end
 end

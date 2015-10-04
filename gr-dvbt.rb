@@ -1,5 +1,3 @@
-require "formula"
-
 class GrDvbt < Formula
   homepage "https://github.com/BogdanDIA/gr-dvbt"
   head "https://github.com/BogdanDIA/gr-dvbt.git"
@@ -17,7 +15,7 @@ class GrDvbt < Formula
       ] + std_cmake_args
 
       system "cmake", "..", *args
-      system "make install"
+      system "make", "install"
     end
   end
 end

@@ -1,5 +1,3 @@
-require "formula"
-
 class GrQam < Formula
   homepage "https://github.com/argilo/gr-qam"
   head "https://github.com/argilo/gr-qam.git"
@@ -22,7 +20,7 @@ class GrQam < Formula
       ] + std_cmake_args
 
       system "cmake", "..", *args
-      system "make install"
+      system "make", "install"
     end
   end
 end

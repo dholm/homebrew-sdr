@@ -1,5 +1,3 @@
-require "formula"
-
 class GrIeee802154g < Formula
   homepage "https://github.com/dudmuck/gr-ieee802154g"
   head "https://github.com/dudmuck/gr-ieee802154g.git"
@@ -22,7 +20,7 @@ class GrIeee802154g < Formula
       ] + std_cmake_args
 
       system "cmake", "..", *args
-      system "make install"
+      system "make", "install"
     end
   end
 end

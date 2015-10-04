@@ -1,5 +1,3 @@
-require "formula"
-
 class GrAirModes < Formula
   homepage "https://github.com/bistromath/gr-air-modes"
   head "https://github.com/bistromath/gr-air-modes.git"
@@ -22,7 +20,7 @@ class GrAirModes < Formula
       ] + std_cmake_args
 
       system "cmake", "..", *args
-      system "make install"
+      system "make", "install"
     end
   end
 end

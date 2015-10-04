@@ -1,5 +1,3 @@
-require "formula"
-
 class GrRtty < Formula
   homepage "https://github.com/bistromath/gr-rtty"
   head "https://github.com/bistromath/gr-rtty.git"
@@ -20,7 +18,7 @@ class GrRtty < Formula
       ] + std_cmake_args
 
       system "cmake", "..", *args
-      system "make install"
+      system "make", "install"
     end
   end
 end

@@ -1,5 +1,3 @@
-require "formula"
-
 class GrOp25 < Formula
   homepage "http://op25.osmocom.org/trac/wiki"
   head "git://op25.osmocom.org/op25.git"
@@ -22,7 +20,7 @@ class GrOp25 < Formula
       ] + std_cmake_args
 
       system "cmake", "..", *args
-      system "make install"
+      system "make", "install"
     end
   end
 end

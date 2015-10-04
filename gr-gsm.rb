@@ -1,5 +1,3 @@
-require "formula"
-
 class GrGsm < Formula
   homepage "https://github.com/ptrkrysik/gr-gsm"
   head "https://github.com/ptrkrysik/gr-gsm.git"
@@ -23,7 +21,7 @@ class GrGsm < Formula
 
       ENV.deparallelize
       system "cmake", "..", *args
-      system "make install"
+      system "make", "install"
     end
   end
 end

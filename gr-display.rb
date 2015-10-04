@@ -1,5 +1,3 @@
-require "formula"
-
 class GrDisplay < Formula
   homepage "https://github.com/dl1ksv/gr-display"
   head "https://github.com/dl1ksv/gr-display.git"
@@ -9,7 +7,7 @@ class GrDisplay < Formula
   depends_on "gnuradio"
   depends_on "boost"
   depends_on "cppunit"
-  depends_on "qt4"
+  depends_on "qt"
   depends_on "pyqt"
 
   def install
@@ -21,7 +19,7 @@ class GrDisplay < Formula
       ] + std_cmake_args
 
       system "cmake", "..", *args
-      system "make install"
+      system "make", "install"
     end
   end
 end

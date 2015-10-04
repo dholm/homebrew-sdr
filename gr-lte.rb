@@ -1,5 +1,3 @@
-require "formula"
-
 class GrLte < Formula
   homepage "https://github.com/kit-cel/gr-lte"
   head "https://github.com/kit-cel/gr-lte.git"
@@ -23,7 +21,7 @@ class GrLte < Formula
       ] + std_cmake_args
 
       system "cmake", "..", *args
-      system "make install"
+      system "make", "install"
     end
   end
 end

@@ -1,5 +1,3 @@
-require "formula"
-
 class GrSdr < Formula
   homepage "https://github.com/pothosware/gr-sdr"
   head "https://github.com/pothosware/gr-sdr.git"
@@ -23,7 +21,7 @@ class GrSdr < Formula
       ] + std_cmake_args
 
       system "cmake", "..", *args
-      system "make install"
+      system "make", "install"
     end
   end
 end

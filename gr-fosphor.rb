@@ -1,5 +1,3 @@
-require "formula"
-
 class GrFosphor < Formula
   homepage "http://sdr.osmocom.org/trac/wiki/fosphor"
   head "git://git.osmocom.org/gr-fosphor"
@@ -22,7 +20,7 @@ class GrFosphor < Formula
       args << "-DENABLE_QT=ON" if build.with? "qt"
 
       system "cmake", "..", *args
-      system "make install"
+      system "make", "install"
     end
   end
 end

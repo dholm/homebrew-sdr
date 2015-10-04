@@ -22,7 +22,7 @@ class GrDrm < Formula
       ] + std_cmake_args
 
       system "cmake", "../gr-drm", *args
-      system "make install"
+      system "make", "install"
     end
   end
 end

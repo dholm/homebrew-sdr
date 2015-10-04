@@ -1,5 +1,3 @@
-require "formula"
-
 class GrLdpc < Formula
   homepage "https://github.com/manuts/gr-ldpc"
   head "https://github.com/manuts/gr-ldpc.git"
@@ -20,7 +18,7 @@ class GrLdpc < Formula
       ] + std_cmake_args
 
       system "cmake", "..", *args
-      system "make install"
+      system "make", "install"
     end
   end
 end
