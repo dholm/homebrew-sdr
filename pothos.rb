@@ -6,6 +6,7 @@ class Pothos < Formula
 
   depends_on "cmake" => :build
   depends_on "qt5"
+  depends_on "poco"
   depends_on "portaudio"
   depends_on "graphviz"
   depends_on "soapysdr"
