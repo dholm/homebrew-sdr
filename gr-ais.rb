@@ -5,6 +5,8 @@ class GrAis < Formula
   head "https://github.com/bistromath/gr-ais.git"
 
   depends_on "cmake" => :build
+  depends_on "doxygen" => :build
+  depends_on "graphviz" => :build
   depends_on "swig" => :build
   depends_on "gnuradio"
   depends_on "boost"

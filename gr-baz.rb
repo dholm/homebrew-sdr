@@ -5,6 +5,8 @@ class GrBaz < Formula
   head "https://github.com/balint256/gr-baz.git"
 
   depends_on "cmake" => :build
+  depends_on "doxygen" => :build
+  depends_on "graphviz" => :build
   depends_on "gnuradio"
 
   def install

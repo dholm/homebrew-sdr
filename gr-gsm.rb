@@ -5,6 +5,8 @@ class GrGsm < Formula
   head "https://github.com/ptrkrysik/gr-gsm.git"
 
   depends_on "cmake" => :build
+  depends_on "doxygen" => :build
+  depends_on "graphviz" => :build
   depends_on "swig" => :build
   depends_on "boost"
   depends_on "gnuradio"
