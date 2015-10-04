@@ -6,9 +6,10 @@ class GrCdma < Formula
 
   depends_on "cmake" => :build
   depends_on "swig" => :build
-  depends_on "gnuradio"
   depends_on "boost"
   depends_on "cppunit"
+  depends_on "gnuradio"
+  depends_on "log4cpp"
 
   def install
     mkdir "build" do
