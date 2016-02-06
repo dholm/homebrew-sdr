@@ -6,10 +6,11 @@ class GrSdr < Formula
   depends_on "doxygen" => :build
   depends_on "graphviz" => :build
   depends_on "swig" => :build
-  depends_on "gnuradio"
+
   depends_on "boost"
   depends_on "cppunit"
-  depends_on "soapysdr"
+  depends_on "gnuradio"
+  depends_on "pothosware/pothos/soapysdr"
 
   def install
     mkdir "build" do

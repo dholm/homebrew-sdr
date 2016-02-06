@@ -7,7 +7,7 @@ class GrOsmosdr < Formula
   depends_on "gr-fosphor"
   depends_on "gr-iqbal"
   depends_on "librtlsdr"
-  depends_on "soapysdr"
+  depends_on "pothosware/pothos/soapysdr"
 
   def install
     mkdir "build" do

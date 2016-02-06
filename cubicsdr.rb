@@ -11,7 +11,7 @@ class Cubicsdr < Formula
   depends_on "fftw"
   depends_on "librtlsdr"
   depends_on "liquid-dsp"
-  depends_on "soapysdr"
+  depends_on "pothosware/pothos/soapysdr"
   depends_on "wxwidgets"
 
   def install

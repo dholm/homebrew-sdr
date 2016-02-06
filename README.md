@@ -19,3 +19,13 @@ https://raw.githubusercontent.com/dholm/homebrew-sdr/master/<formula>.rb
 
 Many of these formulas depend on GNU Radio from
 [metacollin/homebrew-gnuradio](https://github.com/metacollin/homebrew-gnuradio).
+
+
+Third Party Taps
+================
+
+* Pothos [pothosware/homebrew-pothos](https://github.com/pothosware/homebrew-pothos)
+
+  ```
+  brew tap pothosware/pothos
+  ```
