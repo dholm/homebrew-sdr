@@ -2,6 +2,8 @@ require "formula"
 
 class OsmoGmr < Formula
   homepage "http://osmocom.org"
+  url "http://cgit.osmocom.org/osmo-gmr/snapshot/osmo-gmr-0.2.tar.xz"
+  sha256 "40af2bacbc5ec4529f0894097ffce748e6bea551af81e21cadc9b5169c91735d"
   head "git://git.osmocom.org/osmo-gmr"
 
   depends_on "libtool" => :build
