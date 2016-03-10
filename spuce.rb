@@ -13,7 +13,7 @@ class Spuce < Formula
       args = %W[
         -DCMAKE_PREFIX_PATH=#{HOMEBREW_PREFIX}/opt/qt5
       ] + std_cmake_args
-      system "cmake", "..", "", *args
+      system "cmake", "..", *args
       system "make", "install"
     end
   end
