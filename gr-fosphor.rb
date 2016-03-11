@@ -6,6 +6,7 @@ class GrFosphor < Formula
 
   depends_on "cmake" => :build
   depends_on "pyqt" if build.with? "qt"
+  depends_on "freetype"
   depends_on "glfw3"
   depends_on "gnuradio"
 
