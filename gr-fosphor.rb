@@ -17,6 +17,7 @@ class GrFosphor < Formula
       args = %W[
         -DCMAKE_SHARED_LINKER_FLAGS='-Wl,-undefined,dynamic_lookup'
         -DPYTHON_LIBRARY='#{HOMEBREW_PREFIX}/lib/libgnuradio-runtime.dylib'
+        -DFREETYPE2_INCLUDE_DIR_ftheader='#{Formula["freetype"].include}'
       ] + std_cmake_args
       args << "-DENABLE_QT=ON" if build.with? "qt"
 
