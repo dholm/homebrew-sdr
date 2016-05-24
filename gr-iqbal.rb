@@ -1,7 +1,5 @@
 class GrIqbal < Formula
   homepage "http://www.osmocom.org/"
-  url "http://git.osmocom.org/gr-iqbal/snapshot/gr-iqbal-0.37.2.tar.xz"
-  sha256 "933d047e5be51020bc9a15386ddea7870103fb080c249af8aedf2dd4f1b499b2"
   head "git://git.osmocom.org/gr-iqbal"
 
   depends_on "cmake" => :build
@@ -33,7 +31,7 @@ __END__
 @@ -31,7 +31,7 @@
  		__GNUC_PATCHLEVEL__	\
  	)
- 
+
 -#if GCC_VERSION >= 40800
 +#if GCC_VERSION >= 40800 || defined(__clang__)
  # define complex _Complex
