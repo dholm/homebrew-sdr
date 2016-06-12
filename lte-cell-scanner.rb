@@ -8,6 +8,7 @@ class LteCellScanner < Formula
 
   depends_on "cmake" => :build
   depends_on "librtlsdr"
+  depends_on "hackrf"
   depends_on "boost"
   depends_on "itpp"
   depends_on "openblas"
@@ -17,6 +18,7 @@ class LteCellScanner < Formula
     mkdir "build" do
       args = %W[
         -DUSE_RTLSDR=1
+        -DUSE_HACKRF=1
       ] + std_cmake_args
 
       system "cmake", "..", *args
