@@ -13,8 +13,8 @@ class GrTheano < Formula
   depends_on "cppunit"
 
   resource "theano" do
-    url "https://github.com/Theano/Theano/archive/rel-0.6.tar.gz"
-    sha1 "2eb96cb77ea86a528e0c7b9fec5f907194116a2e"
+    url "https://github.com/Theano/Theano/archive/rel-0.8.2.tar.gz"
+    sha256 "144e67a5bec9748d80381654b06e2b1164d034f8679028c59b7bb384d2e53a04"
   end
 
   def install
