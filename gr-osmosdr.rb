@@ -6,6 +6,7 @@ class GrOsmosdr < Formula
 
   depends_on "cmake" => :build
 
+  depends_on "Cheetah" => :python
   depends_on "gnuradio"
   depends_on "gr-fosphor"
   depends_on "gr-iqbal"
