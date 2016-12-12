@@ -4,7 +4,7 @@ class Csdr < Formula
   url "https://github.com/simonyiszk/csdr/archive/0.12.tar.gz"
   version "0.12"
   sha256 "2caf50784667258618b85428652cff46b13b6e5509a0457fccd645a5d53ad9ee"
-  head "https://github.com/simonyiszk/csdr"
+  head "https://github.com/simonyiszk/csdr.git"
 
   patch :DATA
 
