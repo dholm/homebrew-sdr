@@ -2,18 +2,17 @@ require "formula"
 
 class Cubicsdr < Formula
   homepage "https://github.com/cjcliffe/CubicSDR"
-  url "https://github.com/cjcliffe/CubicSDR/archive/0.2.0-beta-rc5.tar.gz"
-  version "0.2.0b5"
-  sha256 "20f9cfeb24717a177b1d57692c54985d16d576fcbed97e9a9415a8bfa9a5510d"
+  url "https://github.com/cjcliffe/CubicSDR/archive/0.2.3.tar.gz"
+  sha256 "b058883a82c466530000ec15aa6c7f690036efb0374ca4da87da441fbd2043cf"
   head "https://github.com/cjcliffe/CubicSDR.git"
 
   depends_on "cmake" => :build
 
-  depends_on "fftw"
+  depends_on "fftw" => "without-fortran"
   depends_on "librtlsdr"
   depends_on "liquid-dsp"
   depends_on "pothosware/pothos/soapysdr"
-  depends_on "wxwidgets"
+  depends_on "wxmac"
 
   def install
     mkdir "build" do
@@ -21,7 +20,7 @@ class Cubicsdr < Formula
       system "make"
 
       libexec.install Dir["x64/*"]
-      (bin/"CubicSDR").write <<-EOS.undent
+      (bin/"CubicSDR").write <<~EOS
         #!/usr/bin/env bash
         (
             cd #{libexec}
