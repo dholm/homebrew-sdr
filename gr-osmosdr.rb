@@ -1,4 +1,5 @@
 class GrOsmosdr < Formula
+  desc "GNU Radio hardware support for OsmoSDR and other devices"
   homepage "http://sdr.osmocom.org/trac/wiki/GrOsmoSDR"
   url "http://git.osmocom.org/gr-osmosdr/snapshot/gr-osmosdr-0.1.4.tar.xz"
   sha256 "1945d0d98fd4b600cb082970267ec2041528f13150422419cbd7febe2b622721"
@@ -14,6 +15,7 @@ class GrOsmosdr < Formula
     sha256 "be308229f0c1e5e5af4f27d7ee06d90bb19e6af3059794e5fd536a6f29a9b550"
   end
 
+  depends_on "cmake" => :build
   depends_on "gnuradio"
   depends_on "gr-fosphor"
   depends_on "gr-iqbal"
