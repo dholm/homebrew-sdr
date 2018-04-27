@@ -1,11 +1,12 @@
 class GrSpecest < Formula
+  desc "Spectral estimation routines for GNU Radio"
   homepage "https://github.com/kit-cel/gr-specest"
   head "https://github.com/kit-cel/gr-specest.git"
 
   patch :DATA
 
-  depends_on :fortran => :build
   depends_on "cmake" => :build
+  depends_on "gcc" => :build
   depends_on "swig" => :build
   depends_on "openblas"
   depends_on "gnuradio"
